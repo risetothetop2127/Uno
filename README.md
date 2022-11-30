@@ -43,12 +43,3 @@ hake
 
 UNO rules:
 [http://www.wikihow.com/Play-UNO](http://www.wikihow.com/Play-UNO)
-
-## Copyright and License
-
-All important references, copyright ownership belongs to those who
-owns them. This project claims no copyrights at all.
-
-You may use the code here for any means useful to you, and if you
-acknowledge us, we will be happy, otherwise, we are equally happy if
-you find value on this.
