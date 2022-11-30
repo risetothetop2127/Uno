@@ -1,0 +1,20 @@
+-- -*- mode: haskell -*-
+-- vi: set ft=haskell :
+
+import Development.Hake
+import Development.Hake.FunSet
+
+clean = [ "rm -Rf _hake", "stack clean" ]
+dist_clean = clean ++ [ "rm -Rf .stack_work" ]
+
+rules = [
+
+  dflt [ "test" ]
+  , task "test" [ "hpack", "stack test" ]
+  , task "build" [ "hpack", "stack build" ]
+  , task "clean" clean
+  , task "dist_clean" dist_clean
+
+  ]
+
+main = hake rules
